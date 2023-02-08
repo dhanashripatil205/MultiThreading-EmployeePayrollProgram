@@ -23,6 +23,24 @@ namespace EmployeePayrollServiceSQL
         public string City { get; set; }
         public string Country { get; set; }
 
+ public EmployeeDetails(int EmployeeID, string EmployeeName, string PhoneNumber, string Address, string Department, char Gender, double BasicPay,
+            double Deductions, double TaxablePay, double Tax, double NetPay, string City, string Country)
+        {
+            this.EmployeeID = EmployeeID;
+            this.EmployeeName = EmployeeName;
+            this.PhoneNumber = PhoneNumber;
+            this.Address = Address;
+            this.Department = Department;
+            this.Gender = Gender;
+            this.BasicPay = BasicPay;
+            this.Deductions = Deductions;
+            this.TaxablePay = TaxablePay;
+            this.Tax = Tax;
+            this.NetPay = NetPay;
+            this.City = City;
+            this.Country = Country;
+
+        }
 
     }
 }
